@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <title>Página 2 - Formação</title>
+    <link rel="stylesheet" href="estilo.css" />
+</head>
+<body>
+    <header>
+        <h1>Formação</h1>
+    </header>
+
+    <nav class="menu-superior">
+        <ul>
+            <li><a href="sobremim.html">Sobre Mim</a></li>
+            <li><a href="portfolio.html">Portfólio</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <div class="voltar-container">
+        <button onclick="voltarPagina()">← Voltar</button>
+    </div>
+
+    <main class="formacao-container">
+        <div class="caixa-formacao">
+            <p>
+                Ensino Médio Completo
+                <br /><br />
+                Cursando Analise e Desenvolvimento de Sistemas
+                <br /><br />
+                Cursos: 
+                <br /><br />
+                <br /><br />
+                Informatica Basica 
+                <br /><br /> 
+                Carga horária: 90 horas 
+                <br /><br />
+                Instituição de Ensino: Visão do Futuro
+                <br /><br />
+                <br /><br />
+                Secretariado
+                <br /><br />
+                Carga Horária: 144 horas
+                <br /><br />
+                Instituição de Ensino: Visão do Futuro
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <p>Curso de Análise e Desenvolvimento de Sistemas</p>
+    </footer>
+
+    <script>
+        function voltarPagina() {
+            if (document.referrer !== "") {
+                window.history.back();
+            } else {
+                window.location.href = "index.html";
+            }
+        }
+    </script>
+</body>
+</html>

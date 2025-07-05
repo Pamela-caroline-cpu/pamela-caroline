@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Sobre Mim</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Sobre Mim</h1>
+    </header>
+
+    <nav class="menu-superior">
+        <ul>
+            <li><a href="formacao.html">Formação</a></li>
+            <li><a href="portfolio.html">Portfólio</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <div class="voltar-container">
+        <button onclick="voltarPagina()">← Voltar</button>
+    </div>
+
+    <main class="sobre-container">
+        <div class="imagem-sobre">
+            <img src="imagemindex.jpg" alt="Foto pessoal">
+        </div>
+        <div class="texto-sobre">
+            <p>
+                Olá! Me chamo Pamela e sou estudante de Análise e Desenvolvimento de Sistemas. Trabalho como analista de atendimento, onde lido com desafios e soluções todos os dias.
+                <br><br>
+                No tempo livre, gosto de ir para a academia para cuidar do corpo, ler um bom livro para cuidar da mente e, claro, aproveitar com meus amigos.
+                <br><br>
+                Gosto de aprender coisas novas, rir das situações do dia a dia e encontrar um equilíbrio entre responsabilidade e leveza.
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <p>Curso de Análise e Desenvolvimento de Sistemas</p>
+    </footer>
+
+    <script>
+        function voltarPagina() {
+            if (document.referrer !== "") {
+                window.history.back();
+            } else {
+                window.location.href = "index.html";
+            }
+        }
+    </script>
+</body>
+</html>

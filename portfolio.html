@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Página 3 - Portfólio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Portfólio</h1>
+    </header>
+
+    <nav class="menu-superior">
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobremim.html">Sobre Mim</a></li>
+            <li><a href="formacao.html">Formação</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <div class="voltar-container">
+        <button onclick="voltarPagina()">← Voltar</button>
+    </div>
+
+    <main>
+        <!-- Imagens do portfólio -->
+        <img class="portfolio-img" src="portfolio.jpg" alt="Currículo 1">
+    </main>
+
+    <footer>
+        <p>Curso de Análise e Desenvolvimento de Sistemas</p>
+    </footer>
+
+    <script>
+        function voltarPagina() {
+            if (document.referrer !== "") {
+                window.history.back();
+            } else {
+                window.location.href = "index.html";
+            }
+        }
+    </script>
+</body>
+</html>
