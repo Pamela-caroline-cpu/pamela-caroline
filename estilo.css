@@ -68,9 +68,21 @@ header {
 }
 
 /* Conteúdo geral */
-main {
+.sobre-container {
+    display: flex;
+    align-items: flex-start; /* Alinha topo da imagem e texto */
+    gap: 20px; /* Espaço entre imagem e texto */
+    max-width: 900px;
+    margin: 0 auto;
     padding: 30px 20px;
-    text-align: center;
+    text-align: left; /* Texto alinhado à esquerda */
+}
+
+.imagem-sobre img {
+    width: 200px; /* imagem menor */
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
 }
 
 /* Formulário com inputs ao lado dos labels */
