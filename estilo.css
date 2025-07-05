@@ -46,44 +46,22 @@ header {
     background-color: #5d36d0;
 }
 
-/* Botão Voltar */
-.voltar-container {
-    padding: 15px 20px;
-    margin-left: 10px;
-}
-
-.voltar-container button {
-    background-color: #8f5fff;
-    color: #fff;
-    border: none;
-    padding: 10px 18px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s;
-}
-
-.voltar-container button:hover {
-    background-color: #5d36d0;
-}
-
 /* Conteúdo principal */
 main {
     max-width: 800px;
     margin: 30px auto;
     padding: 20px;
-    text-align: center;
+    text-align: center;  /* centraliza a imagem */
 }
 
-/* Caixa formação centralizada */
-.caixa-formacao {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: center;
-    background-color: #e6e0ff;
-    padding: 20px;
+/* Imagem destaque */
+.imagem-destaque {
+    max-width: 600px;  /* largura máxima da imagem */
+    width: 100%;       /* escala responsivamente */
+    height: auto;
+    display: inline-block;
     border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 /* Rodapé */
